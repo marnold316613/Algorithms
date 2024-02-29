@@ -2,6 +2,8 @@ const oNotation = require('./functions/oNotation');
 const arrayDemo = require('./functions/arrays');
 const hashDemo= require('./functions/hash');
 const linkedListDemo = require('./functions/linkedlist');
+const treesDemo = require('./functions/trees');
+const graphDemo = require('./functions/graph');
 
 //oNotation.helloWorld();
 //arrayDemo.helloWorld();
@@ -45,5 +47,21 @@ const linkedListDemo = require('./functions/linkedlist');
 // console.log('reversed');
 // newreverse.printlist();
 
-console.log("return of two sums",arrayDemo.twoSums([1,6],7));
+//console.log("return of two sums",arrayDemo.twoSums([1,6],7));
 
+// const tree = new treesDemo.BinarySearchTree();
+
+// tree.insert(9);
+// tree.insert(4);
+// tree.insert(20);
+// tree.insert(1);
+// tree.insert(6);
+// tree.insert(15);
+// tree.insert(170);
+
+// console.log('lookup 1', tree.lookup(1));
+// console.log('lookup 170', tree.lookup(170));
+// console.log('lookup 30', tree.lookup(30));
+
+
+// console.log(tree);
