@@ -4,7 +4,7 @@ const twoSums = require('../functions/arrays');
 //   expect(twoSums.sum(1,2)).toBe(3);
 // })
 
-test('find index of two sums equal to 11', () => {
+test('find index of two sums equal to 3,4', () => {
   expect(twoSums.twoSums([1,3,7,9,2],11)).toEqual([3,4]);
 })
 
@@ -12,8 +12,12 @@ test('find index of two sums equal to 25 answer should be null', () => {
   expect(twoSums.twoSums([1,3,7,9,2],25)).toEqual(null);
 })
 
+test('find index of two sums equal to 7 answer should be 0,1', () => {
+  expect(twoSums.twoSums([1,6],7)).toEqual([0,1]);
+})
+
 test('find index of two sums equal to 7 answer should be null', () => {
-  expect(twoSums.twoSums([1,6],7)).toEqual(null);
+  expect(twoSums.twoSums([1,5],7)).toEqual(null);
 })
 
 test('find index of two sums equal to 0  answer should be null', () => {

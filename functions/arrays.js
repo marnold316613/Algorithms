@@ -18,11 +18,38 @@ function sum(a, b) {
 //insert
 //delete
 
-
+const arrayIsValid = (myArray, minimumElements) => 
+{
+ return   (Array.isArray(myArray) && myArray.length>=minimumElements && minimumElements>0) ? true : false; 
+}
 
 const twoSums = (sumArray, sum) => {
-
+  if(!arrayIsValid(sumArray,2)) {return null;}
+  for(let i=0; i<sumArray.length-1;i++){
+    for(let j=i+1;j<sumArray.length;j++) {
+      if ((sumArray[i]+sumArray[j])===sum ){
+        return [i,j];
+      }
+    }
+  }
   return null;
+
+}
+
+const twoSumsHash = (sumArray, sum) => {
+  if(!arrayIsValid(sumArray,2)) {return null;}
+  const ntfHash= {};
+  for(let i=0; i<sumArray.length-1;i++){
+    const ntf = sum-sumArray[i];
+    if (ntfHash[sumArray[i]]) {
+
+    }
+    else {
+
+    }
+  }
+  return null;
+
 }
 
 

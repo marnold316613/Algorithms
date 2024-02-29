@@ -23,24 +23,27 @@ const linkedListDemo = require('./functions/linkedlist');
 
 //oNotation.logAllPairsofArray(boxes);
 
-const myLinkedList = new linkedListDemo.LinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.append(3);
-// myLinkedList.append(12);
-// myLinkedList.append(4);
-//myLinkedList.prepend(7);
-myLinkedList.insert(1,12);
-//myLinkedList.insert(0,33);
-myLinkedList.printlist();
-console.log('remove index 2');
-myLinkedList.remove(2);
+// const myLinkedList = new linkedListDemo.LinkedList(10);
+// myLinkedList.append(5);
+// myLinkedList.append(16);
+// myLinkedList.append(3);
+// // myLinkedList.append(12);
+// // myLinkedList.append(4);
+// //myLinkedList.prepend(7);
+// myLinkedList.insert(1,12);
+// //myLinkedList.insert(0,33);
+// myLinkedList.printlist();
+// console.log('remove index 2');
+// myLinkedList.remove(2);
 
-//console.log(myLinkedList);
-myLinkedList.printlist(true);
+// //console.log(myLinkedList);
+// myLinkedList.printlist(true);
 
-myLinkedList.reverse();
-// console.log('normal');
-myLinkedList.printlist(true);
+// myLinkedList.reverse();
+// // console.log('normal');
+// myLinkedList.printlist(true);
 // console.log('reversed');
 // newreverse.printlist();
+
+console.log("return of two sums",arrayDemo.twoSums([1,6],7));
+
