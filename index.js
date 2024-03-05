@@ -4,7 +4,8 @@ const hashDemo= require('./functions/hash');
 const linkedListDemo = require('./functions/linkedlist');
 const treesDemo = require('./functions/trees');
 const graphDemo = require('./functions/graph');
-
+const recursiveDemo = require('./functions/recursion');
+const sortingDemo = require('./functions/sorting');
 //oNotation.helloWorld();
 //arrayDemo.helloWorld();
 // const large = new Array(100).fill('nemo');
@@ -65,3 +66,35 @@ const graphDemo = require('./functions/graph');
 
 
 // console.log(tree);
+
+//console.log('interative',recursiveDemo.findFactorialIterative(5));
+
+//console.log('recursive',recursiveDemo.findFactorialRecursive(5));
+
+//console.log('interative',recursiveDemo.findFibonacciIterative(7));
+
+//console.log('recursive',recursiveDemo.findFibonacciRecursive(7));
+
+//console.log('hello', recursiveDemo.reverseMe('hello'));
+
+// Example usage:
+// const arr = [5, 3, 8, 4, 2, 7, 1];
+// console.log("Original array:", arr);
+// const sortedArray = mergeSort(arr);
+// console.log("Sorted array:", sortedArray);
+
+//const letters = new Set([1,2,'e']);
+
+const letters = new Map([['a',1],['b',2]]);
+
+// const test = {}
+// letters.add("e");
+// console.log('values',letters.values());
+// console.log('keys',letters.keys());
+// console.log('entries',letters.entries());
+// console.log('size', letters.size);
+// for(let x of letters){
+//   console.log(x);
+// }
+// console.log('test size', Object.keys(test));
+console.log(letters.values());
