@@ -6,6 +6,7 @@ const treesDemo = require('./functions/trees');
 const graphDemo = require('./functions/graph');
 const recursiveDemo = require('./functions/recursion');
 const sortingDemo = require('./functions/sorting');
+const dynamicDemo = require('./functions/dynamicprogramming');
 //oNotation.helloWorld();
 //arrayDemo.helloWorld();
 // const large = new Array(100).fill('nemo');
@@ -85,7 +86,7 @@ const sortingDemo = require('./functions/sorting');
 
 //const letters = new Set([1,2,'e']);
 
-const letters = new Map([['a',1],['b',2]]);
+//const letters = new Map([['a',1],['b',2]]);
 
 // const test = {}
 // letters.add("e");
@@ -97,4 +98,7 @@ const letters = new Map([['a',1],['b',2]]);
 //   console.log(x);
 // }
 // console.log('test size', Object.keys(test));
-console.log(letters.values());
+//console.log(letters.values());
+
+let masterfib =dynamicDemo.dynamicFindFibonacciRecursive();
+console.log(masterfib(7));
