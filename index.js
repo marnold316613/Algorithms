@@ -79,7 +79,7 @@ const dynamicDemo = require('./functions/dynamicprogramming');
 //console.log('hello', recursiveDemo.reverseMe('hello'));
 
 // Example usage:
-// const arr = [5, 3, 8, 4, 2, 7, 1];
+ const arr = [5, 3, 8, 4, 2, 7, 1];
 // console.log("Original array:", arr);
 // const sortedArray = mergeSort(arr);
 // console.log("Sorted array:", sortedArray);
@@ -100,5 +100,32 @@ const dynamicDemo = require('./functions/dynamicprogramming');
 // console.log('test size', Object.keys(test));
 //console.log(letters.values());
 
-let masterfib =dynamicDemo.dynamicFindFibonacciRecursive();
-console.log(masterfib(7));
+//let masterfib =dynamicDemo.dynamicFindFibonacciRecursive();
+//console.log(masterfib(7));
+
+const myobj= {field1:"test", field2:"test2", field3:"test3"};
+let n = "field1";
+if (n in myobj) {
+  console.log(true);
+}
+
+if (myobj["field4"]==='undefined')
+{
+  myobj["field4"]="test4";
+}
+myobj["field5"]="test5";
+console.log(myobj);
+
+
+const a = new Set([1,2,3,4])
+a.add(5);
+
+if (a.has(5)) {
+  console.log('has 5');
+}
+
+console.log(a);
+
+if (arr.includes(1)) {
+  console.log('array has 1')
+}
